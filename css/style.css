@@ -131,7 +131,7 @@ img {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 48px;
   height: 4px;
   border-radius: 2px;
@@ -344,10 +344,7 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.instagram,
-.x,
-.facebook,
-.in {
+.app {
   fill: #f4f4fd;
 }
 
@@ -526,8 +523,8 @@ img {
 .footer-icon {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-link {
   display: flex;
   width: 100%;
@@ -536,11 +533,10 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #31d0aa;
-  border: 1px solid #31d0aa;
 }
